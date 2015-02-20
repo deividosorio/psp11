@@ -47,7 +47,8 @@ public class App extends HttpServlet
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
+            throws ServletException, IOException {
                 
         try {
             MainView.showHome(req,resp);
@@ -62,9 +63,11 @@ public class App extends HttpServlet
      * los rangos calculados, la información se recibe con la estructura 
      * de LOC,numberMethods separados por guiones cada clase
      * @param req de Input
-     * @param resp
+     * @param resp de inpunt
+     * @throws IOException para validación de error de IO
      */
-    public void consoleInput(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    public void consoleInput(HttpServletRequest req, HttpServletResponse resp) 
+            throws IOException {
         String strPuntos = req.getParameter("clases");
 
         String[] arrStrPuntos = strPuntos.split("-");

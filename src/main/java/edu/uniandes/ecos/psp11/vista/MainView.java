@@ -25,8 +25,9 @@ public class MainView {
 
         PrintWriter pw = resp.getWriter();
         pw.write("<html>");
-        pw.println("<h1>PSP11 Programa que calcula el Rangos relativos del tamaño</h1>");
+        pw.println("<h1>PSP1.1 Programa que calcula el Rangos relativos del tamaño</h1>");
         pw.println("<p>ECOS 2015 <br>Deivid Alexander Osorio Barrera</p>");
+        pw.println("<p>Taller N.4</p>");
         
         pw.write("<p>Ingrese los valores LOC y Métodos de cada clase separados por una"
                 + "coma (,) y cada clase separada por guion (-), cada punto debe"
@@ -34,7 +35,7 @@ public class MainView {
         pw.write("<p>Para el test2 ingrese los valores de Pgs y número de Chaper separados por coma"
                 + "y cada Chaper separado por Guion.</p> \n");
         pw.write("<form action=\"calc\" method=\"post\"> \n"
-                + "    Clases(LOC,numMetodos): <input type=\"text\" size=\"60\" name=\"puntos\"><br>\n"
+                + "    Clases(LOC,numMetodos): <input type=\"text\" size=\"60\" name=\"clases\"><br>\n"
                 + "    <input type=\"submit\" value=\"Calcular Rangos\"> </form> ");
         pw.write("</html>");
 
